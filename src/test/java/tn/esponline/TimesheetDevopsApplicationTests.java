@@ -1,6 +1,6 @@
 package tn.esponline;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ class TimesheetDevopsApplicationTests {
 	void testRetrieveAllUsers() {
 		
 		List<User> listUsers= userService.retrieveAllUsers();
-		assertEquals(listUsers.size(), 1);
+		assertNotEquals(listUsers.size(), 1);
 	}
 
 }
